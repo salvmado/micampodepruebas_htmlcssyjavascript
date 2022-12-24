@@ -7,14 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-<<<<<<< HEAD
     <img srcset="./img/small.png 480w, ./img/large.png 800w"
     sizes="(max-width: 600px) 480px, 800px"
     src="./img/large.png" alt="">
-=======
-    <img srcset="../img/small.png 480w, ../img/large.png 800w"
-    sizes="(max-width: 600px) 480px, 800px"
-    src="../img/large.png" alt="">
->>>>>>> 7c51f74e9ce327354daa5d861dcd9659a7ffe40a
+
+
+    <picture>
+      <source media="(max-width: 599px)" srcset="./img/small.png" />
+      <source media="(min-width: 600px)" srcset="./img/large.png" />
+      <img src="./img/lage.png" alt="" />
+    </picture>
+
 </body>
 </html>
