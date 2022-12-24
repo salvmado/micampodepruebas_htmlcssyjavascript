@@ -1,0 +1,166 @@
+body {
+  height: 100vh;
+  /* overflow: auto;   */
+  scroll-snap-type: y mandatory;
+  scroll-padding: 4.25em;
+}
+
+header { 
+  position: sticky;
+  top: 0;
+}
+
+article {
+  scroll-snap-align: start;
+  min-height: calc(100vh - 4.25em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section {
+  overflow: auto;
+  grid: auto-flow / repeat(3, 80vw);
+  scroll-snap-type: both mandatory;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout */
+
+* { box-sizing: border-box; }
+
+html, body {
+  overflow: hidden;
+}
+
+html,
+header {
+  background: lightgray;
+}
+
+main {
+  display: grid;
+  grid-template: auto minmax(0, 1fr) / 100%;
+  width: 100vw;
+}
+
+@media not (prefers-reduced-motion:reduce) {
+  main { scroll-behavior: smooth; }
+}
+
+section {
+  display: grid;
+  grid-auto-rows: minmax(min-content, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+header {
+  scroll-snap-align: start;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: 1 / 1 / span 1 / -1;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+}
+
+article {
+  background: white;
+  border: 2px solid gray;
+  display: grid;
+  grid-template-columns: minmax(min-content, 35em);
+  align-content: center;
+  justify-content: center;
+  padding: 1em 2em;
+}
+
+h1, h2 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+}
+
+ul ul {
+  padding-left: 1em;
+}
+
+li {
+  padding: 0.25em 0;
+}
+
+.bug {
+  background: pink;
+}
+
+code {
+  display: inline-block;
+  background: #eee;
+  padding: 0.125em 0.25em;
+}

@@ -1,0 +1,13 @@
+section {
+  font-size: calc(1em + 2vh);
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 90%;
+  width: 10em;
+  height: auto;
+}
